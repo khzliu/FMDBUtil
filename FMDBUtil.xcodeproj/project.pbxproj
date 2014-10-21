@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034D51D219F5F14F002AA323 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 034D51D119F5F14F002AA323 /* libsqlite3.dylib */; };
 		03F28FA719F4F97B00708B1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F28FA619F4F97B00708B1C /* Foundation.framework */; };
 		03F28FA919F4F97B00708B1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F28FA819F4F97B00708B1C /* CoreGraphics.framework */; };
 		03F28FAB19F4F97B00708B1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F28FAA19F4F97B00708B1C /* UIKit.framework */; };
@@ -19,6 +20,13 @@
 		03F28FC219F4F97B00708B1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F28FAA19F4F97B00708B1C /* UIKit.framework */; };
 		03F28FCA19F4F97B00708B1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03F28FC819F4F97B00708B1C /* InfoPlist.strings */; };
 		03F28FCC19F4F97B00708B1C /* FMDBUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FCB19F4F97B00708B1C /* FMDBUtilTests.m */; };
+		03F28FD819F4FD0700708B1C /* HZFMDBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FD719F4FD0700708B1C /* HZFMDBUtil.m */; };
+		03F28FDB19F4FD4C00708B1C /* HZResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FDA19F4FD4C00708B1C /* HZResultSet.m */; };
+		03F28FE819F4FD9400708B1C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FDE19F4FD9400708B1C /* FMDatabase.m */; };
+		03F28FE919F4FD9400708B1C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FE019F4FD9400708B1C /* FMDatabaseAdditions.m */; };
+		03F28FEA19F4FD9400708B1C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FE219F4FD9400708B1C /* FMDatabasePool.m */; };
+		03F28FEB19F4FD9400708B1C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FE419F4FD9400708B1C /* FMDatabaseQueue.m */; };
+		03F28FEC19F4FD9400708B1C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F28FE719F4FD9400708B1C /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034D51D119F5F14F002AA323 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		03F28FA319F4F97B00708B1C /* FMDBUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F28FA619F4F97B00708B1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03F28FA819F4F97B00708B1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +57,22 @@
 		03F28FC719F4F97B00708B1C /* FMDBUtilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMDBUtilTests-Info.plist"; sourceTree = "<group>"; };
 		03F28FC919F4F97B00708B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03F28FCB19F4F97B00708B1C /* FMDBUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBUtilTests.m; sourceTree = "<group>"; };
+		03F28FD619F4FD0700708B1C /* HZFMDBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZFMDBUtil.h; sourceTree = "<group>"; };
+		03F28FD719F4FD0700708B1C /* HZFMDBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZFMDBUtil.m; sourceTree = "<group>"; };
+		03F28FD919F4FD4C00708B1C /* HZResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZResultSet.h; sourceTree = "<group>"; };
+		03F28FDA19F4FD4C00708B1C /* HZResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZResultSet.m; sourceTree = "<group>"; };
+		03F28FDD19F4FD9400708B1C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		03F28FDE19F4FD9400708B1C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		03F28FDF19F4FD9400708B1C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		03F28FE019F4FD9400708B1C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		03F28FE119F4FD9400708B1C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		03F28FE219F4FD9400708B1C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		03F28FE319F4FD9400708B1C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		03F28FE419F4FD9400708B1C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		03F28FE519F4FD9400708B1C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		03F28FE619F4FD9400708B1C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		03F28FE719F4FD9400708B1C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		03F28FEE19F5003300708B1C /* HZDBMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZDBMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034D51D219F5F14F002AA323 /* libsqlite3.dylib in Frameworks */,
 				03F28FA919F4F97B00708B1C /* CoreGraphics.framework in Frameworks */,
 				03F28FAB19F4F97B00708B1C /* UIKit.framework in Frameworks */,
 				03F28FA719F4F97B00708B1C /* Foundation.framework in Frameworks */,
@@ -96,6 +122,7 @@
 		03F28FA519F4F97B00708B1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				034D51D119F5F14F002AA323 /* libsqlite3.dylib */,
 				03F28FA619F4F97B00708B1C /* Foundation.framework */,
 				03F28FA819F4F97B00708B1C /* CoreGraphics.framework */,
 				03F28FAA19F4F97B00708B1C /* UIKit.framework */,
@@ -118,6 +145,7 @@
 		03F28FAD19F4F97B00708B1C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03F28FD519F4FA0400708B1C /* HZFMDBUtil */,
 				03F28FAE19F4F97B00708B1C /* FMDBUtil-Info.plist */,
 				03F28FAF19F4F97B00708B1C /* InfoPlist.strings */,
 				03F28FB219F4F97B00708B1C /* main.m */,
@@ -142,6 +170,45 @@
 				03F28FC819F4F97B00708B1C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03F28FD519F4FA0400708B1C /* HZFMDBUtil */ = {
+			isa = PBXGroup;
+			children = (
+				03F28FD619F4FD0700708B1C /* HZFMDBUtil.h */,
+				03F28FD719F4FD0700708B1C /* HZFMDBUtil.m */,
+				03F28FD919F4FD4C00708B1C /* HZResultSet.h */,
+				03F28FDA19F4FD4C00708B1C /* HZResultSet.m */,
+				03F28FED19F5001000708B1C /* Macros */,
+				03F28FDC19F4FD9400708B1C /* FMDB */,
+			);
+			path = HZFMDBUtil;
+			sourceTree = "<group>";
+		};
+		03F28FDC19F4FD9400708B1C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				03F28FDD19F4FD9400708B1C /* FMDatabase.h */,
+				03F28FDE19F4FD9400708B1C /* FMDatabase.m */,
+				03F28FDF19F4FD9400708B1C /* FMDatabaseAdditions.h */,
+				03F28FE019F4FD9400708B1C /* FMDatabaseAdditions.m */,
+				03F28FE119F4FD9400708B1C /* FMDatabasePool.h */,
+				03F28FE219F4FD9400708B1C /* FMDatabasePool.m */,
+				03F28FE319F4FD9400708B1C /* FMDatabaseQueue.h */,
+				03F28FE419F4FD9400708B1C /* FMDatabaseQueue.m */,
+				03F28FE519F4FD9400708B1C /* FMDB.h */,
+				03F28FE619F4FD9400708B1C /* FMResultSet.h */,
+				03F28FE719F4FD9400708B1C /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		03F28FED19F5001000708B1C /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				03F28FEE19F5003300708B1C /* HZDBMacro.h */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F28FD819F4FD0700708B1C /* HZFMDBUtil.m in Sources */,
+				03F28FEB19F4FD9400708B1C /* FMDatabaseQueue.m in Sources */,
+				03F28FDB19F4FD4C00708B1C /* HZResultSet.m in Sources */,
 				03F28FB719F4F97B00708B1C /* HZAppDelegate.m in Sources */,
+				03F28FE819F4FD9400708B1C /* FMDatabase.m in Sources */,
+				03F28FEA19F4FD9400708B1C /* FMDatabasePool.m in Sources */,
+				03F28FEC19F4FD9400708B1C /* FMResultSet.m in Sources */,
 				03F28FB319F4F97B00708B1C /* main.m in Sources */,
+				03F28FE919F4FD9400708B1C /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +512,7 @@
 				03F28FD119F4F97B00708B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03F28FD219F4F97B00708B1C /* Build configuration list for PBXNativeTarget "FMDBUtilTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +521,7 @@
 				03F28FD419F4F97B00708B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
